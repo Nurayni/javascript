@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POP-UP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/pop.css">
+</head>
+<body id="body" style="overflow:hidden;">
+<div id="abc">  
+        <span class="glyphicon glyphicon-pencil"></span>     
+    <div id="popupContact"> 
+    <form action="#" id="form" method="post" name="form">    
+    <div id="close" onclick="div_hide()">+</div>
+    <h2>Flex-Media</h2>
+    <hr>
+    <input id="name" name="name" placeholder="Name" type="text">
+    <input id="email" name="email" placeholder="Email" type="text">
+    <input id="pass" name="password" placeholder="Password" type="text">
+    <a href="javascript:%20check_empty()" id="login">LOGIN</a>
+    </form>
+    </div>
+</div>
+<div id="just">
+    <h1>Click Button For Login</h1>
+    <button id="popup" onclick="div_show()">Popup</button>
+</div>
+    <script>
+    function check_empty() {
+   if (document.getElementById('name')
+   .value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+    alert("Fill All Fields !");
+    } else {
+           document.getElementById('form').submit();
+           alert("Form Submitted Successfully...");
+       }
+   }
+    function div_show() {
+    document.getElementById('abc').style.display = "block";
+  }
+   function div_hide(){
+   document.getElementById('abc').style.display = "none";
+   }
+   </script>
+                
+               
+</body>
+</html>

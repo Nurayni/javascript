@@ -1,0 +1,48 @@
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+   
+}
+.wrapper{
+    margin:0 auto;
+    width:200px;
+    height:100px;
+    position: relative;
+    top:-100%;
+    transform: translateY(100%);
+    
+
+}
+#on{
+    width:100px;
+    padding:15px;
+    border-radius: 5px;
+    position:absolute;
+    margin-left: 62px;
+    background: darksalmon;
+    font-size: 15px;
+    font-weight: 600;
+    border:transparent;
+}
+#on:hover{
+    color:white;
+    background: darkseagreen;
+}
+#off{
+    width:100px;
+    padding:15px;
+    border-radius: 5px;
+    position:absolute;
+    top: 260%;
+    margin-left:62px;
+    background: darksalmon;
+    font-size: 15px;
+    font-weight: 600;
+    border:transparent;
+    
+}
+#off:hover{
+    color:white;
+    background: darkseagreen;
+}

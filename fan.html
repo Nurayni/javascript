@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fan</title>
+    <link rel="stylesheet" href="css/fan.css">
+</head>
+<body>
+<div class="wrapper">
+  <img id="myFan" src="image/d.png" width="200" heigh="100"><br>
+  <button id="on" onclick="turnOn()"> On </button><br>
+  <button id="off" onclick="turnOff()"> Off </button>
+</div>
+
+  <script>
+    let timer;
+    let turn = 0;
+    function turnOn() {
+        timer = setInterval(turnFan, 100);
+       let x = document.getElementById("on");
+       x.disabled = true;
+}
+
+    function turnOff() {
+    clearInterval(timer);
+    let x = document.getElementById("on");
+    x.disabled = false;
+    }
+
+    function turnFan() {
+    let x = document.getElementById("myFan");
+    turn += 100;
+    x.style.transform = "rotate("+ (turn % 245) +"deg)"
+    }
+  </script>
+</body>
+
+</html>

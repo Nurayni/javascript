@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic Arithmetic</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/maths.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+           <div class="row">
+               <div class="col-md-12">
+                    <div class="header_text">
+                        <h1>
+                            Basic Arithmetic
+                        </h1>
+                    </div>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-md-12">
+                <div class="operation-field s-1">
+                    <div class="row">
+                        <div class="col-md-6">
+             <input type="text" placeholder="Enter the first number" id="firstInp" class="input-group custom-inpt my-4">
+                        </div><br><br>
+                        <div class="col-md-6">
+            <input type="text" placeholder="Enter the second number" id="secondInp" class="input-group custom-inpt my-4">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="operators my-5">
+                                <button id="add" onclick="add()" class="custom-btn btn-primary">+</button>
+                                <button id="subs" onclick="sub()" class="custom-btn btn-dark">-</button>
+                                <button id="mul" onclick="multiply()" class="custom-btn btn-danger">*</button>
+                                <button id="dvd" onclick="divide()" class="custom-btn btn-success">/</button>
+                                <button id="mod" onclick="modulus()" class="custom-btn btn-light">%</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                <input type="text" placeholder="Get the result" id="output" class="input-group  my-2">
+                        </div>
+                    </div>
+                </div>
+               </div>
+           </div>
+        </div>
+    </div>
+
+    <script>
+
+        function add(){
+            var inpt1;
+            var inpt2;  
+            var out;
+            
+            inpt1 = document.getElementById("firstInp").value;
+            var c = parseFloat(inpt1);
+
+            inpt2 = document.getElementById("secondInp").value;
+            var d = parseFloat(inpt2);
+
+            out = document.getElementById("output");
+            var res = c + d;
+
+            out.value = res;
+        }
+
+        function sub(){
+            var inpt1;
+            var inpt2;  
+            var out;
+
+            inpt1 = document.getElementById("firstInp").value;
+            var c = parseFloat(inpt1);
+
+            inpt2 = document.getElementById("secondInp").value;
+            var d = parseFloat(inpt2);
+
+            out = document.getElementById("output");
+            
+            var res = c - d;
+
+            out.value = res;
+        }
+        function multiply(){
+            var inpt1;
+            var inpt2;  
+            var out;
+
+            inpt1 = document.getElementById("firstInp").value;
+            var c = parseFloat(inpt1);
+
+            inpt2 = document.getElementById("secondInp").value;
+            var d = parseFloat(inpt2);
+
+            out = document.getElementById("output");
+            
+            var res = c * d;
+
+            out.value = res;
+        }   
+        function divide(){
+            var inpt1;
+            var inpt2;  
+            var out;
+
+            inpt1 = document.getElementById("firstInp").value;
+            var c = parseFloat(inpt1);
+
+            inpt2 = document.getElementById("secondInp").value;
+            var d = parseFloat(inpt2);
+
+            out = document.getElementById("output");
+            
+            var res = c / d;
+
+            out.value = res;
+        }    
+        function modulus(){
+            var inpt1;
+            var inpt2;  
+            var out;
+
+            inpt1 = document.getElementById("firstInp").value;
+            var c = parseFloat(inpt1);
+
+            inpt2 = document.getElementById("secondInp").value;
+            var d =parseFloat(inpt2);
+
+            out = document.getElementById("output");
+            
+            var res = c % d;
+
+            out.value = res;
+        } 
+    </script>
+</body>
+</html>

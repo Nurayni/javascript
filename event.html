@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <button type="submit" onclick="show()">Show</button> -->
+    <button type="submit" onclick="hide()">hide</button>
+    <br><br>
+    <p id="param">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Consequuntur quis suscipit molestiae cumque earum et magnam laboriosam, 
+        iste corrupti nihil recusandae, culpa perspiciatis mollitia voluptate 
+        odit deserunt necessitatibus hic iusto.</p>
+        <script>
+            function show(){
+                var p=document.getElementById("param");
+                p.style.display="block";
+            }
+            function hide(){
+                var p=document.getElementById("param");
+                p.style.display="none";
+            }
+        </script>
+</body>
+</html> 
